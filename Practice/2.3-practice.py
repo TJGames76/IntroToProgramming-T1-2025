@@ -23,5 +23,16 @@ font_size_para = 10
 para_size = 10
 para = 10
 
+name = input ("What is your name?\n>")
+#\n is a short cut to move text down a line (escape charcter)
+print ("Your name is " + name) 
 
+#Get the numver as a string
+num = input("what number do you want to square?\n> ")
 
+#Parse (convert) the string to an integer
+num = int(num)
+#int turns string into a number can you can do the same with flots and the others
+
+#Do math and print
+print(num * num)
