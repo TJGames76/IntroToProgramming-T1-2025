@@ -15,4 +15,5 @@ print(OxygenTanks + " Oxygen Tanks")
 print(FoodPacks + " Food Packs")
 print(WaterPacks + " Water Packs") 
 
-print("Confirm")
+print("Confirm oxygen tanks")
+OxygenTanks = input ("> ")
