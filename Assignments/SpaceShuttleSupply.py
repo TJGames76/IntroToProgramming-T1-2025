@@ -17,3 +17,7 @@ print(WaterPacks + " Water Packs")
 
 print("Confirm oxygen tanks")
 OxygenTanks = input ("> ")
+
+print(OxygenTanks + " Oxygen Tanks")
+print(FoodPacks + " Food Packs")
+print(WaterPacks + " Water Packs") 
