@@ -6,3 +6,6 @@
 # Modulus (%): Returns the remainder of the division of two operands. For example, 5 % 3 results in 2.
 # Exponentiation (∗∗): Raises the first value to the power of the second. For instance, 10 ** 2 equals 100.
 # Floor Division (//): Divides and rounds down to the nearest integer. For example, 10 // 3 gives 3.
+
+
+# Concatenation is adding stings togeather 

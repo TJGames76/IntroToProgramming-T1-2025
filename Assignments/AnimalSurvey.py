@@ -1,5 +1,7 @@
 Favorite_Animal = input("What is your favorite animal?\n> ")
+# The line above is asking the question
 print("My favorte animal is " + Favorite_Animal)
+# The line above is going to wright there answer after the put it in
 Why_Like_Them = input("Why do you like them\n> ") 
 print("I like them because "  + Why_Like_Them)
 Sounds = input("What sounds dose your animal make\n> ")
@@ -16,3 +18,4 @@ What_Like_Most = input("What do you like most about your animal?\n> ")
 print("I like " + What_Like_Most + "the most.")
 another_animal = input("Do you have any other favort animals?\n> ")
 print("I also like " + another_animal)
+ 
