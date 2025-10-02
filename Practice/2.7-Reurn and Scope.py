@@ -20,3 +20,12 @@ def my_function():
 my_function() #outputs 5
 print(local_var) # Causes an error because the local variable does not exist at the global scope
 
+global_var = 20 # Global variable
+
+def my_function():
+    global_var = 30  # local variable shadows the global variable
+    print(global_var) # Outputs 20 (global variable remains unchanged)
+
+my_function()
+print(global_var) # Outputs: 20 (global variable remains unchanged)
+

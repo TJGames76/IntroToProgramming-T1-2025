@@ -30,6 +30,7 @@ noun_group2 = input(" give me a [noun] for a second group \n> ")
 noun_thing = input(" gimme a [noun] for a thing that group 1 wants \n> ")
 nount_thing2 = input (" gimme a [noun] for a thing that group 2 wants \n> ") 
 
-print("once upon a time, in a " + noun_place + adjective + adjective + "away. A war raged on between " + noun_group1 + "and " + noun_group2 + "The two groups saw diffrent vales in the " + noun_place ". " "one wanted")
+def mad_lib(n, v, b, c, f, s):
+    print("once upon a time, in a " + n + v + v + "away. A war raged on between " + b + "and " + c + "The two groups saw diffrent vales in the " + n "one wanted" + s + "")
 
 
