@@ -31,6 +31,6 @@ noun_thing = input(" gimme a [noun] for a thing that group 1 wants \n> ")
 nount_thing2 = input (" gimme a [noun] for a thing that group 2 wants \n> ") 
 
 def mad_lib(n, v, b, c, f, s):
-    print("once upon a time, in a " + n + v + v + "away. A war raged on between " + b + "and " + c + "The two groups saw diffrent vales in the " + n "one wanted" + s + "")
+    print("once upon a time, in a " + n + v + v + "away. A war raged on between " + b + "and " + c + "The two groups saw diffrent vales in the " + n "one wanted")
 
 

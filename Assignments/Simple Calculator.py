@@ -34,7 +34,7 @@ exp2 = input("pick a number to multiply via exponet\n> ")
 exponet(int(exp1), + int(exp2))
 
 def Moudulus(m, l):
-    print(m%l)
+    print(m%l) # runs the moudulus function
 
 first_number = input("pick a number\n> ")
 divisor = input("pick another number\n> ")

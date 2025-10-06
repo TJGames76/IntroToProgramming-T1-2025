@@ -29,3 +29,9 @@ def my_function():
 my_function()
 print(global_var) # Outputs: 20 (global variable remains unchanged)
 
+global_var = 50
+
+def moodify_global():
+    global global_var
+    global_var = 100
+    print(global_var) # 100 
