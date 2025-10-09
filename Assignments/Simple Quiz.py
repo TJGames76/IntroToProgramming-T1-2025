@@ -44,6 +44,5 @@ def tally_score():
     else:
         print("Incorrect")
         e = 0
-    print("Score =")
-    print(a + b + c + d + e)
+    print("Score" + str(a + b + c + d + e) + "/5")
 tally_score()
