@@ -56,3 +56,13 @@ def check_password():
 
 check_password()
 
+age = 20     # if inside of if statments
+has_premission = True
+
+if age >= 18:
+    if has_premission:
+        print("Access granted")
+    else:
+        print("Access denied: Premission required")
+else:
+    print("Acsses denied: age restriction")
