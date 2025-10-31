@@ -1,3 +1,6 @@
+# 2 = sword
+# 3 = armor
+# 4 = heal
 def start_adventure():
     print("")
     print("You find yourself walking around a vilage on your adventure when you come across the vilages forest.")
@@ -170,7 +173,7 @@ def shop():
     print("You have $100 what would you like to by")
     print("1. a rusty sword for $75")
     print("2. a full set of rusty armor $100")
-    print("3. a heath potion for $50")
+    print("3. a bottom less heath potion for $50")
     print("4. leave")
     
     choice_3e = input("What would you like to do\n> ")
@@ -191,7 +194,11 @@ def shop():
         print("Invalid choice. Try again")
         shop()
 
-#ending_2
+# ending_3
+def ending_3():
+    print("you have found the hidden ending. You are completly lost")
+    
+    #ending_2
 def ending_2():
     print("You chose to give up ... How boring")
     ending_1b = input("Would you like to start over (yes or no)\n> ")
@@ -267,6 +274,7 @@ def fist_fight():
 def Sneak_by():
     print("You choice to sneak by ")
     print("good luck hope fully you don't step on a stick and make a bunch of noise to draw the monster atention righttttttttttttttttttttttttttttttttttttt")
+    print("You made to much noise when trying to sneak by and got killed")
     
     ending_1 = input("Whould you like to try again (yes or no)\n> ")
     
@@ -510,14 +518,14 @@ def right_2():
     elif choice_2a == "2":
         Chad()
     elif choice_2a == "3":
-        Search_area()
+        search_ab()
     else:
         print("Invalid choice. Try again")
         right_2()
 
 def right_3():
     print("you enter the forest and head to the right. as you wander deeper into the outer layer you happen across a monsters nest. What do you do.")
-    print("1. take a stealthy aproche.")
+    print("1. take a stealthy aproche and fight.")
     print("2. walk away.")
     print("3. Stand there till they notice you.")
         
@@ -539,7 +547,7 @@ def walk_away_2():
     print("What do you want to do")
     print("1. Enter the cave.")
     print("2. walk around the cave")
-    print("3. Head back to fight the nest you saw earlier")
+    print("3. Head right")
     print("4. Your to sacred to fight at all and call it quits")
     
     choice_3b = input("What would you do\n> ")
@@ -549,7 +557,7 @@ def walk_away_2():
     elif choice_3b == "2":
         Walk_around_2()
     elif choice_3b == "3":
-        Head_right()
+        right()
     elif choice_3b == "4":
         ending_2()
     else:
@@ -561,7 +569,7 @@ def walk_away_3():
     print("What do you want to do")
     print("1. Enter the cave.")
     print("2. walk around the cave")
-    print("3. Head back to fight the nest you saw earlier")
+    print("3. Head to the right")
     print("4. Your to sacred to fight at all and call it quits")
     
     choice_3b = input("What would you do\n> ")
@@ -571,7 +579,7 @@ def walk_away_3():
     elif choice_3b == "2":
         Walk_around_3()
     elif choice_3b == "3":
-        enter_forest_3()
+        right_2()
     elif choice_3b == "4":
         ending_2()
     else:
@@ -583,7 +591,7 @@ def walk_away_4():
     print("What do you want to do")
     print("1. Enter the cave.")
     print("2. walk around the cave")
-    print("3. Head back to fight the nest you saw earlier")
+    print("3. Head to the right")
     print("4. Your to sacred to fight at all and call it quits")
     
     choice_3b = input("What would you do\n> ")
@@ -593,7 +601,7 @@ def walk_away_4():
     elif choice_3b == "2":
         Walk_around_4()
     elif choice_3b == "3":
-        enter_forest_4()
+        right_3()
     elif choice_3b == "4":
         ending_2()
     else:
@@ -656,7 +664,7 @@ def cave_left():
     print("you try to leave but befor you can get out hit picks up a bolder and uses it to block the entrence ")
     print("You now are forced to fight")
 
-    come back to
+    come_back_to
 
 def cave_right():
     print("you walk untill you find your self at a dead end ")
@@ -782,7 +790,7 @@ def search_b():
         search_b()
 
 def attack_with_sword():
-    print("You attak with your sword in hand")
+    print("You sneak up ready to attack with your sword in hand")
     print("COMPLET THE MAZE TO KILL YOUR ENEIMY. USE W FOR UP, D FOR RIGHT, A FOR LEFT, S FOR DOWN")
     print("MOVEING WILL BRING YOU TO THE NEXT INTERSECTION OR WALL")
     print("FAILER WILL RESULT IN YOUR DEATH")
@@ -804,9 +812,269 @@ def attack_with_sword():
     if maze == "SDSDSDSSASAW":
         kill_sword()
     else:
-        print("Invalid choice. Try again")
+        print("You failed")
         ending_1()
 
+def stealth_1b():
+    print("You choice to sneak up on the two monsters ")
+    print("You can")
+    print("1. fist fight ")
+    print("2. sneak buy")
+    print("3. search")
+
+    Stealth_1ab = input("What would you like to do\n> ")
+
+    if Stealth_1ab == "1":
+        attack_with_fist_and_armor()
+    elif Stealth_1ab == "2":
+        Sneak_by()
+    elif Stealth_1ab == "3":
+        search_ab()
+    else:
+        print("Invalid choice. Try again")
+        stealth_1b()
+
+def attack_with_fist_and_armor():
+    print("You attak with your fist along with your armor to take out the monsters")
+    print("COMPLET THE MAZE TO KILL YOUR ENEIMY. USE W FOR UP, D FOR RIGHT, A FOR LEFT, S FOR DOWN")
+    print("MOVEING WILL BRING YOU TO THE NEXT INTERSECTION OR WALL")
+    print("FAILER WILL RESULT IN YOUR DEATH")
+    print("")
+    print("_______Start Here________")
+    print("|_________ YOU ______ __|")
+    print("|  ___________  ___|____|")
+    print("|  _______|_______ _____|")
+    print("|_____  ___ ___|______ _|")
+    print("|  _____|      |_____  _|")
+    print("|  ___ _|___|__|____    |")
+    print("|_|_____|_  x |__  _____|")
+    print("|_______________________|")
+    
+    print("END AT X")
+    print("")
+    maze = input("ENTER THE RIGHT PATH WITH NO SPACES AND ALL CAPS FIRST TRY\n> ")
+
+    if maze == "SDSDSDSSASAW":
+        kill_armor()
+    else:
+        print("You faild")
+        ending_1()
+
+def search_ab():
+    print("You search the area and find a stick you can use to help")
+    print("Would you like to")
+    print("1. Fight")
+    print("2. Sneak by")
+
+    choice_ab = input("what would you like to do\n> ")
+
+    if choice_ab == "1":
+        aromr_stick()
+    elif choice_ab == "2":
+        Sneak_by()
+    else:
+        print("Invalid choice. Try again")
+        search_ab()
+
+def Chad():
+    print("You stand there and slowly start walking towrd your enemy")
+    attack_with_fist_and_armor()
+
+def stealth_1c():
+    print("You attak with your fist to take out the monsters")
+    print("COMPLET THE MAZE TO KILL YOUR ENEIMY. USE W FOR UP, D FOR RIGHT, A FOR LEFT, S FOR DOWN")
+    print("MOVEING WILL BRING YOU TO THE NEXT INTERSECTION OR WALL")
+    print("FAILER WILL RESULT IN YOUR DEATH (except you have heal potions)")
+    print("")
+    print("_______Start Here________")
+    print("|_________ YOU ______ __|")
+    print("|  ___________  ___|____|")
+    print("|  _______|_______ _____|")
+    print("|_____  ___ ___|______ _|")
+    print("|  _____|      |_____  _|")
+    print("|  ___ _|___|__|____    |")
+    print("|_|_____|_  x |__  _____|")
+    print("|_______________________|")
+    
+    print("END AT X")
+    print("")
+    maze = input("ENTER THE RIGHT PATH WITH NO SPACES AND ALL CAPS FIRST TRY\n> ")
+
+    if maze == "SDSDSDSSASAW":
+        kill_potion()
+    else:
+        print("Invalid choice. You take a sip of your heal potion try again.")
+        stealth_1c()
+
+def Enter_cave_2():
+    print("You deiced to enter the near by cave")
+    print("Do you want to.")
+    print("1. Enter in further")
+    print("2. Look around")
+
+    choice_4b = input("What do you want to do\n> ")
+
+    if choice_4b == "1":
+        enter_deeper_2()
+    elif choice_4b == "2":
+        print("")
+        print("like the view")
+        print("")
+        Enter_cave_2()
+    else:
+        print("Invalid choice, Try again")
+        Enter_cave_2()
+
+def Enter_cave_3():
+    print("You deiced to enter the near by cave")
+    print("Do you want to.")
+    print("1. Enter in further")
+    print("2. Look around")
+
+    choice_4b = input("What do you want to do\n> ")
+
+    if choice_4b == "1":
+        enter_deeper_3()
+    elif choice_4b == "2":
+        print("")
+        print("like the view")
+        print("")
+        Enter_cave_3()
+    else:
+        print("Invalid choice, Try again")
+        Enter_cave_3()
+
+def Enter_cave_4():
+    print("You deiced to enter the near by cave")
+    print("Do you want to.")
+    print("1. Enter in further")
+    print("2. Look around")
+
+    choice_4b = input("What do you want to do\n> ")
+
+    if choice_4b == "1":
+        enter_deeper_4()
+    elif choice_4b == "2":
+        print("")
+        print("like the view")
+        print("")
+        Enter_cave_4()
+    else:
+        print("Invalid choice, Try again")
+        Enter_cave_4()
+
+def Walk_around_2():
+    print("You finaly make it around the cave and find your self at the edge of a cliff.")
+    print("Do you want to")
+    print("1. Turn back and enter cave")
+    print("2. Look around")
+    print("3. Jump")
+
+    choice_4c = input("What do you want to do\n> ")
+
+    if choice_4c == "1":
+        Enter_cave_2()
+    elif choice_4c == "2":
+        print("You see a nice green forest below")
+        x = input("Would you like to rest here ,  (y or n)\n> ")
+        if x == "y":
+            sit_2()
+        elif x == "n":
+            Enter_cave_2()
+        else:
+            print("Invalid choice, Try again")
+    elif choice_4c == "3":
+        Jump()
+    else:
+        print("Invalid choice, Try again")
+        Walk_around()
+
+def sit_2():
+    print("You take a seat on a rock and look at the great forest below")
+    stay = input("type ready when you want to move on and head into the cave\n> ")
+
+    if stay == "ready":
+        Enter_cave_2()
+    else:
+        print("Invalid choice. Try again")
+        sit_2()
+
+def Walk_around_3():
+    print("You finaly make it around the cave and find your self at the edge of a cliff.")
+    print("Do you want to")
+    print("1. Turn back and enter cave")
+    print("2. Look around")
+    print("3. Jump")
+
+    choice_4c = input("What do you want to do\n> ")
+
+    if choice_4c == "1":
+        Enter_cave_3()
+    elif choice_4c == "2":
+        print("You see a nice green forest below")
+        x = input("Would you like to rest here ,  (y or n)\n> ")
+        if x == "y":
+            sit_3()
+        elif x == "n":
+            Enter_cave_3()
+        else:
+            print("Invalid choice, Try again")
+    elif choice_4c == "3":
+        Jump()
+    else:
+        print("Invalid choice, Try again")
+        Walk_around()
+
+def sit_3():
+    print("You take a seat on a rock and look at the great forest below")
+    stay = input("type ready when you want to move on and head into the cave\n> ")
+
+    if stay == "ready":
+        Enter_cave_3()
+    else:
+        print("Invalid choice. Try again")
+        sit_3()
+
+def Walk_around_4():
+    print("You finaly make it around the cave and find your self at the edge of a cliff.")
+    print("Do you want to")
+    print("1. Turn back and enter cave")
+    print("2. Look around")
+    print("3. Jump")
+
+    choice_4c = input("What do you want to do\n> ")
+
+    if choice_4c == "1":
+        Enter_cave_4()
+    elif choice_4c == "2":
+        print("You see a nice green forest below")
+        x = input("Would you like to rest here ,  (y or n)\n> ")
+        if x == "y":
+            sit_4()
+        elif x == "n":
+            Enter_cave_4()
+        else:
+            print("Invalid choice, Try again")
+    elif choice_4c == "3":
+        Jump_b()
+    else:
+        print("Invalid choice, Try again")
+        Walk_around()
+
+def sit_4():
+    print("You take a seat on a rock and look at the great forest below")
+    stay = input("type ready when you want to move on and head into the cave\n> ")
+
+    if stay == "ready":
+        Enter_cave_4()
+    else:
+        print("Invalid choice. Try again")
+        sit_4()
+
+def Jump_b():
+    print("You jump and hit the ground so hard your seconds from death but with you last breathing moments you sip down some of you heal potion ")
+    print("When you regain your strgenth you look around and relise there is no way back up the cliff and you have no idea were your at")
+    ending_3()
 
 
 start_adventure()
