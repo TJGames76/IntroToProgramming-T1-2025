@@ -41,6 +41,9 @@ def remove_fruit():
     elif remove == "pear's":
         fav_fruits.pop(4)
         print(fav_fruits)
+    elif remove == "cherry":
+        fav_fruits.pop(5)
+        print(fav_fruits)
     else:
         print("Invalid input")
         remove_fruit()
